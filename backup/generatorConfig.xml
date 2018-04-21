@@ -13,7 +13,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/test"
                         userId="root"
-                        password="">
+                        password="root">
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -32,14 +32,13 @@
 
         <!--XMLMAPPER
         ANNOTATEDMAPPER
-        MIXEDMAPPER
         -->
-        <javaClientGenerator targetPackage="cn.jiawu.client" targetProject="gen" type="MIXEDMAPPER">
+        <javaClientGenerator targetPackage="cn.jiawu.client" targetProject="gen" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- sql占位符，表示所有的表 -->
-        <table tableName="emas%">
+        <table tableName="build%">
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>
     </context>

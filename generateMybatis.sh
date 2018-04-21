@@ -10,4 +10,5 @@ echo "http://www.mybatis.org/generator/configreference/xmlconfig.html"
 rm -rf gen
 mkdir gen
 
-java -cp "libs/*" org.mybatis.generator.api.ShellRunner -configfile generatorConfig.xml -overwrite
+#java -cp "libs/*" org.mybatis.generator.api.ShellRunner -configfile generatorConfig.xml -overwrite
+java -cp "libs/*" org.mybatis.generator.api.ShellRunner -configfile generatorConfig.xml
